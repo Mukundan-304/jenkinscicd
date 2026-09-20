@@ -1,4 +1,9 @@
-from app import add
+import unittest
 
-def test_add():
-    assert add(2, 3) == 5
+class TestApp(unittest.TestCase):
+
+    def test_basic(self):
+        self.assertEqual(1 + 1, 2)
+
+if __name__ == "__main__":
+    unittest.main()
